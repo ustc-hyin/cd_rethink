@@ -127,7 +127,7 @@ We provide a script (./scripts/pope_infer_base.sh) to reproduce the baseline res
 bash ./scripts/pope_infer_base.sh
 ```
 
-or
+Alternatively, you can invoke the inference manually by looping over datasets and types:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
@@ -153,7 +153,7 @@ We provide a script (./scripts/pope_infer_cd.sh) to reproduce the prediction res
 bash ./scripts/pope_infer_cd.sh
 ```
 
-or
+Alternatively, you can run the evaluation manually by setting the GPU device and iterating over datasets and types:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
@@ -179,7 +179,7 @@ done
 
 ### Results of Spurious Improvement Methods
 
-We provide a script (./scripts/pope_infer_spurious.sh) to reproduce the prediction results of spurious improvement methods.
+We provide a script (./scripts/pope_infer_spurious.sh) to reproduce the prediction results of spurious improvement methods:
 
 ```bash
 bash ./scripts/pope_infer_spurious.sh
@@ -251,13 +251,13 @@ done
 
 ### Impact of Hallucination Mitigation Methods on the Output Distribution
 
-After obtaining the inference results from all methods, you can use the provided script (./scripts/pope_eval_base.sh) to compute the Accuracy, F1 score, and the proportion of affirmative responses (*Yes*).
+After obtaining the inference results from all methods, you can use the provided script (./scripts/pope_eval_base.sh) to compute the Accuracy, F1 score, and the proportion of affirmative responses (*Yes*):
 
 ```bash
 bash ./scripts/pope_eval_base.sh
 ```
 
-or
+Alternatively, you can run the evaluation manually by setting the GPU device and iterating over datasets and types:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
@@ -274,13 +274,13 @@ for dataset in ${datasets[@]}; do
 done
 ```
 
-To further analyze the impact of hallucination mitigation methods on the output distribution, use the script (./scripts/pope_eval_transfer.sh).
+To further analyze the impact of hallucination mitigation methods on the output distribution, run the provided script as follows:
 
 ```bash
 bash ./scripts/pope_eval_transfer.sh
 ```
 
-or
+Alternatively, you can run the evaluation manually by setting the GPU device and iterating over datasets and types:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
