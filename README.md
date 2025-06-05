@@ -153,7 +153,7 @@ We provide a script (./scripts/pope_infer_cd.sh) to reproduce the prediction res
 bash ./scripts/pope_infer_cd.sh
 ```
 
-Alternatively, you can run the evaluation manually by setting the GPU device and iterating over datasets and types:
+Alternatively, you can invoke the inference manually by looping over datasets and types:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
